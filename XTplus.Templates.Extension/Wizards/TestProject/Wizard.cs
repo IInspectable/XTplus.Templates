@@ -36,7 +36,7 @@ namespace XTplus.Templates.Extension.Wizards.TestProject {
                 // Display a form to the user. The form collects   
                 // input for the custom message.  
                 var inputForm = new MyProjectWizard();
-                inputForm.ShowDialog();
+                inputForm.ShowModal();
 
                 var customMessage = inputForm.CustomMessage.Text;
 
