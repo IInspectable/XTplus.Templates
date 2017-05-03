@@ -1,0 +1,14 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Template.pos</DefaultName>
+    <Name>Pos Template</Name>
+    <Description>An empty Pos Template (.pos)</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>11</SortOrder>
+    <Icon>PosTemplate.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem ItemType="EmbeddedResource" TargetFileName="$fileinputname$.pos" OpenInEditor="true">Empty.pos.txt</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

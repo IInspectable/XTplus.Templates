@@ -1,11 +1,11 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
     <DefaultName>Task.nav</DefaultName>
-    <Name>Workflow Definition (.nav)</Name>
-    <Description>An workflow definition</Description>
+    <Name>Workflow Definition</Name>
+    <Description>An workflow definition (.nav)</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
-    <Icon>__TemplateIcon.ico</Icon>
+    <Icon>WorkflowDefinition.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References />

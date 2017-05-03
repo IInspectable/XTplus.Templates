@@ -60,12 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Templates\ItemTemplates\TestItem\Class.cs.txt" />
     <None Include="UpdateProductVersion.targets" />
-    <VSTemplate Include="Templates\ItemTemplates\TestItem\TestItem.vstemplate">
-      <OutputSubPath>XTplus</OutputSubPath>
-    </VSTemplate>
-    <None Include="Templates\ItemTemplates\TestItem\__TemplateIcon.ico" />
     <None Include="Templates\ProjectTemplates\TestProject\AssemblyInfo.cs" />
     <None Include="Templates\ProjectTemplates\TestProject\Class1.cs" />
     <None Include="Templates\ProjectTemplates\TestProject\MyProjectTemplate.ico" />
@@ -171,7 +166,20 @@
       <OutputSubPath>XTplus</OutputSubPath>
     </VSTemplate>
     <None Include="Templates\ItemTemplates\Task\Task.nav" />
-    <None Include="Templates\ItemTemplates\Task\__TemplateIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Templates\ItemTemplates\EmptyPos\EmptyPos.vstemplate">
+      <OutputSubPath>XTplus</OutputSubPath>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\EmptyPos\Empty.pos.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\EmptyPos\PosTemplate.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\Task\WorkflowDefinition.ico" />
   </ItemGroup>
   <Import Project="TemplateItems.targets" />
   <Import Project="UpdateProductVersion.targets" />

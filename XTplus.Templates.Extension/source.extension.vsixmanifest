@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="XTplus.Templates.Extension.56bff62d-0831-4380-9f93-8a45626950dc" Version="1.0.2" Language="en-US" Publisher="IInspectable" />
+    <Identity Id="XTplus.Templates.Extension.56bff62d-0831-4380-9f93-8a45626950dc" Version="1.0.3" Language="en-US" Publisher="IInspectable" />
     <DisplayName>XTplus.Templates</DisplayName>
     <Description>XTplus project and item templates for Visual Studio.</Description>
   </Metadata>
@@ -14,8 +14,8 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
     <Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="TestProject" />
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="TestItem" />
     <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="EmptyTask" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="EmptyPos" />
   </Assets>
   <Prerequisites>
     <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
