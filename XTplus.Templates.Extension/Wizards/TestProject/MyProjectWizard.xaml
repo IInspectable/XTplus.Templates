@@ -10,6 +10,7 @@
     <Window.Content>
         <StackPanel>
             <TextBox x:Name="CustomMessage"></TextBox>
+            <Rectangle Height="20" Fill="Aqua"/>
         </StackPanel>
     </Window.Content>
     

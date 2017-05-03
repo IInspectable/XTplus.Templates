@@ -6,5 +6,6 @@
 /XTplus.Templates.Extension/obj/Debug
 /XTplus.Templates.Extension/Templates/ProjectTemplates/*.zip
 /XTplus.Templates.Extension/Templates/ItemTemplates/*.zip
+/XTplus.Templates.Extension/ThisAssembly.generated.cs
 /.vs
 
