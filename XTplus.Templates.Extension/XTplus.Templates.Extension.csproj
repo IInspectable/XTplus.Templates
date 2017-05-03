@@ -112,6 +112,15 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\Task\Class.cs.txt" />
+    <None Include="Templates\ItemTemplates\Task\Empty.cs.txt" />
+    <VSTemplate Include="Templates\ItemTemplates\Task\EmptyTask.vstemplate">
+      <OutputSubPath>XTplus</OutputSubPath>
+    </VSTemplate>
+    <None Include="Templates\ItemTemplates\Task\Task.nav" />
+    <None Include="Templates\ItemTemplates\Task\__TemplateIcon.ico" />
+  </ItemGroup>
   <Import Project="TemplateItems.targets" />
   <Import Project="UpdateProductVersion.targets" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
