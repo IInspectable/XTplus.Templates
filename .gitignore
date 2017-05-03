@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/XTplus.Templates.Extension/bin/Debug
+/XTplus.Templates.Extension/obj/Debug
+/XTplus.Templates.Extension/Templates/ProjectTemplates/*.zip
+/XTplus.Templates.Extension/Templates/ItemTemplates/*.zip
+/.vs
+
