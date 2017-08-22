@@ -12,6 +12,6 @@
     <ProjectItem SubType="" TargetFileName="$fileinputname$.gd" ReplaceParameters="true">GdUserControl.gd</ProjectItem>
     <ProjectItem SubType="Form" TargetFileName="GUI\generated\Usr$fileinputname$.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
     <ProjectItem TargetFileName="GUI\generated\Usr$fileinputname$.Designer.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\$fileinputname$TO.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\$fileinputname$TO.generated.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
   </TemplateContent>
 </VSTemplate>
