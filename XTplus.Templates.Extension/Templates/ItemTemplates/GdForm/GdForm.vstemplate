@@ -1,0 +1,17 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Form.gd</DefaultName>
+    <Name>IXOS Form</Name>
+    <Description>A blank IXOS Form (gd)</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>12</SortOrder>
+    <Icon>GuiDefinition.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.gd" ReplaceParameters="true">GdForm.gd</ProjectItem>
+    <ProjectItem SubType="Form" TargetFileName="GUI\generated\Frm$fileinputname$.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem TargetFileName="GUI\generated\Frm$fileinputname$.Designer.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\$fileinputname$TO.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

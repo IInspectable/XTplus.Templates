@@ -2,13 +2,13 @@
   <TemplateData>
     <DefaultName>Template.pos</DefaultName>
     <Name>Pos Template</Name>
-    <Description>An empty Pos Template (.pos)</Description>
+    <Description>A blank print template (.pos)</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>11</SortOrder>
     <Icon>PosTemplate.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem ItemType="EmbeddedResource" TargetFileName="$fileinputname$.pos" OpenInEditor="true">Empty.pos.txt</ProjectItem>
+    <ProjectItem ItemType="EmbeddedResource" TargetFileName="$fileinputname$.pos" OpenInEditor="true">Empty.txt</ProjectItem>
   </TemplateContent>
 </VSTemplate>

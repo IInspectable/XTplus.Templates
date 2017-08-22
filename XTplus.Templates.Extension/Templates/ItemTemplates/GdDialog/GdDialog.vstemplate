@@ -1,0 +1,17 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Dialog.gd</DefaultName>
+    <Name>IXOS Dialog</Name>
+    <Description>A blank IXOS Dialog (gd)</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>13</SortOrder>
+    <Icon>GuiDefinition.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.gd" ReplaceParameters="true">GdDialog.gd</ProjectItem>
+    <ProjectItem SubType="Form" TargetFileName="GUI\generated\Frm$fileinputname$.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem TargetFileName="GUI\generated\Frm$fileinputname$.Designer.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\$fileinputname$TO.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

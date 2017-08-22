@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>Task.nav</DefaultName>
     <Name>Workflow Definition</Name>
-    <Description>An workflow definition (.nav)</Description>
+    <Description>A blank workflow definition (.nav)</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>WorkflowDefinition.ico</Icon>
@@ -14,9 +14,9 @@
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$Result.cs" ReplaceParameters="true">Class.cs.txt</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$InitParams.cs" ReplaceParameters="true">Class.cs.txt</ProjectItem>
     
-    <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$WFS.cs" ReplaceParameters="false">Empty.cs.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="WFL\generated\IBegin$fileinputname$WFS.generated.cs" ReplaceParameters="false">Empty.cs.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="WFL\generated\$fileinputname$WFSBase.generated.cs" ReplaceParameters="false">Empty.cs.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\I$fileinputname$WFS.generated.cs" ReplaceParameters="false">Empty.cs.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$WFS.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="WFL\generated\IBegin$fileinputname$WFS.generated.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="WFL\generated\$fileinputname$WFSBase.generated.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\I$fileinputname$WFS.generated.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
   </TemplateContent>
 </VSTemplate>

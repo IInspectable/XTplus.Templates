@@ -170,7 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Templates\ItemTemplates\Task\Class.cs.txt" />
-    <None Include="Templates\ItemTemplates\Task\Empty.cs.txt" />
+    <None Include="Templates\ItemTemplates\Task\Empty.txt" />
     <VSTemplate Include="Templates\ItemTemplates\Task\EmptyTask.vstemplate">
       <OutputSubPath>XTplus</OutputSubPath>
     </VSTemplate>
@@ -182,13 +182,41 @@
     </VSTemplate>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Templates\ItemTemplates\EmptyPos\Empty.pos.txt" />
+    <None Include="Templates\ItemTemplates\EmptyPos\Empty.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Templates\ItemTemplates\EmptyPos\PosTemplate.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Templates\ItemTemplates\Task\WorkflowDefinition.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\GdDialog\GdDialog.gd" />
+    <None Include="Templates\ItemTemplates\GdDialog\GuiDefinition.ico" />
+    <VSTemplate Include="Templates\ItemTemplates\GdDialog\GdDialog.vstemplate">
+      <OutputSubPath>XTplus</OutputSubPath>
+    </VSTemplate>
+    <None Include="Templates\ItemTemplates\GdDialog\Empty.txt" />
+    <None Include="Templates\ItemTemplates\GdForm\Empty.txt" />
+    <None Include="Templates\ItemTemplates\GdForm\GuiDefinition.ico" />
+    <VSTemplate Include="Templates\ItemTemplates\GdForm\GdForm.vstemplate">
+      <OutputSubPath>XTplus</OutputSubPath>
+    </VSTemplate>
+    <None Include="Templates\ItemTemplates\GdForm\GdForm.gd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\GdUserControl\Empty.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\GdUserControl\GdUserControl.gd" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Templates\ItemTemplates\GdUserControl\GdUserControl.vstemplate">
+      <OutputSubPath>XTplus</OutputSubPath>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\GdUserControl\UserControl.ico" />
   </ItemGroup>
   <Import Project="TemplateItems.targets" />
   <Import Project="UpdateProductVersion.targets" />
