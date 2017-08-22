@@ -4,11 +4,12 @@
         PROPERTIES
             Title = "$safeitemname$"
         END PROPERTIES
+
         HOTKEYS
             HOTKEY Escape += OnEscapeAbbrechen 
         END HOTKEYS
-        CONTROLS
 
+        CONTROLS
             PANEL FormContent Template = Content
                 LAYOUT Grid
                     ColumnCount = 1
@@ -24,10 +25,18 @@
 
                 CONTROLS
 
-                    // TODO Insert Content Controls
+                    CONTROL Label ToDoLabel
+                        LAYOUTINFO
+                            Row=1
+                            Col=1
+                        END LAYOUTINFO
+                        PROPERTIES
+                            Text = "TODO insert content"
+                            Style = Standard_Mitte 
+                        END PROPERTIES
+                    END CONTROL ToDoLabel
                     
                 END CONTROLS
-
             END PANEL FormContent
 
             BARMANAGER Footer
@@ -41,7 +50,7 @@
                             Position   = 12
                         END PROPERTIES
                         EVENTS
-                            Click     += OnF12Übernehmen
+                            Click += OnF12Übernehmen
                         END EVENTS
                         HOTKEYS
                             HOTKEY F12 += OnF12Übernehmen
@@ -51,7 +60,5 @@
                 END CONTROLS
             END BARMANAGER Footer
         END CONTROLS
-
     END FORM $safeitemname$
-
 END NAMESPACE

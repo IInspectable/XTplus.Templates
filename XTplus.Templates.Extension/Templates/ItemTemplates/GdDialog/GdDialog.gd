@@ -24,21 +24,29 @@
 
                 CONTROLS
 
-                    // TODO Insert Content Controls
+                    CONTROL Label ToDoLabel
+                        LAYOUTINFO
+                            Row=1
+                            Col=1
+                        END LAYOUTINFO
+                        PROPERTIES
+                            Text = "TODO insert content"
+                            Style = Standard_Mitte 
+                        END PROPERTIES
+                    END CONTROL ToDoLabel
 
                 END CONTROLS
-
             END PANEL DialogContent
             
             BARMANAGER Footer
                 CONTROLS
                 
-                  CONTROL FunctionButton OK
+                  CONTROL FunctionButton Ok
                         PROPERTIES
-                            Text = "OK\n"
-                            Style = StandardButton
-                            HotKeyText = "F12"
-                            Align = Right 
+                            Text          = "OK\n"
+                            Style         = StandardButton
+                            HotKeyText    = "F12"
+                            Align         = Right 
                             DefaultButton = Accept
                         END PROPERTIES
                         EVENTS
@@ -47,14 +55,14 @@
                         HOTKEYS
                             HOTKEY F12 += OnOk
                         END HOTKEYS
-                    END CONTROL OK
+                    END CONTROL Ok
 
                     CONTROL FunctionButton Abbrechen
                         PROPERTIES
-                            Text = "Abbrechen\n"
-                            Style = StandardButton
-                            HotKeyText = "Escape"
-                            Align = Right
+                            Text          = "Abbrechen\n"
+                            Style         = StandardButton
+                            HotKeyText    = "Escape"
+                            Align         = Right
                             DefaultButton = Cancel
                         END PROPERTIES
                         EVENTS
@@ -68,7 +76,5 @@
                 END CONTROLS
             END BARMANAGER Footer
         END CONTROLS
-
     END DIALOG $safeitemname$
-
 END NAMESPACE
