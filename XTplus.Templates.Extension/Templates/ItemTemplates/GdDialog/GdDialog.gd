@@ -2,11 +2,11 @@
     DIALOG $safeitemname$
         
         PROPERTIES
-            Title = "$safeitemname$"
+            Title  = "$safeitemname$"
+            Width  = 500
+            Height = 450
         END PROPERTIES
-        HOTKEYS
-            HOTKEY Escape += OnEscapeAbbrechen
-        END HOTKEYS
+
         CONTROLS
 
             PANEL DialogContent Template = Content
@@ -42,10 +42,10 @@
                             DefaultButton = Accept
                         END PROPERTIES
                         EVENTS
-                            Click += OK
+                            Click += OnOK
                         END EVENTS
                         HOTKEYS
-                            HOTKEY F12 += OK
+                            HOTKEY F12 += OnOK
                         END HOTKEYS
                     END CONTROL OK
 
@@ -58,10 +58,10 @@
                             DefaultButton = Cancel
                         END PROPERTIES
                         EVENTS
-                            Click += Abbrechen
+                            Click += OnAbbrechen
                         END EVENTS
                         HOTKEYS
-                            HOTKEY Escape += Abbrechen
+                            HOTKEY Escape += OnAbbrechen
                         END HOTKEYS
                     END CONTROL Abbrechen
 
