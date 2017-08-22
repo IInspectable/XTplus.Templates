@@ -42,10 +42,10 @@
                             DefaultButton = Accept
                         END PROPERTIES
                         EVENTS
-                            Click += OnOK
+                            Click += OnOk
                         END EVENTS
                         HOTKEYS
-                            HOTKEY F12 += OnOK
+                            HOTKEY F12 += OnOk
                         END HOTKEYS
                     END CONTROL OK
 
