@@ -4,35 +4,46 @@
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:sys="clr-namespace:System;assembly=mscorlib"
                  HasHelpButton="False"
                  ResizeMode="NoResize"
                  ShowInTaskbar="False"
                  HasDialogFrame="True"
                  WindowStartupLocation="CenterOwner"
                  mc:Ignorable="d" 
-                 Width="300" Height="300"
-                 d:DesignHeight="300" d:DesignWidth="300">
+                 SizeToContent="Height"
+                 Title="Specifiy Options"
+                 Width="400" 
+                 >
 
     <Window.Resources>
-        <Thickness x:Key="OkCancelButtonPadding">9,2,9,2</Thickness>
-        <Thickness x:Key="ButtonPanelMargin">18,11,18,11</Thickness>
+        <Thickness  x:Key="DialogMargin">12</Thickness>
+        <Thickness  x:Key="ButtonPanelMargin">0,18,0,0</Thickness>
+        <Thickness  x:Key="ControlMargin">4,4</Thickness>
+        <sys:Double x:Key="ButtonMinWidth">75</sys:Double>
+        <sys:Double x:Key="ButtonMinHeight">23</sys:Double>
     </Window.Resources>
+
     <Window.Content>
-        <Grid Margin="13">
+        
+        <Grid Grid.Row="1" Margin="{StaticResource ResourceKey=DialogMargin}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            
-            <Grid Grid.Row="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Label Content="Replacement Text:"/>
-                <TextBox Grid.Row="1" VerticalAlignment="Top" DockPanel.Dock="Top" x:Name="CustomMessage"></TextBox>
-            </Grid>
+
+            <StackPanel Grid.Row="0">
+
+                <GroupBox Header="Additional C# classes" Padding="4">
+                    <StackPanel>
+                        <CheckBox Content="Generate C# class for _Init Params"    Margin="{StaticResource ResourceKey=ControlMargin}"/>
+                        <CheckBox Content="Generate C# class for Task State (_TS)" Margin="{StaticResource ResourceKey=ControlMargin}"/>
+                        <CheckBox Content="Generate C# class for _Return Value"    Margin="{StaticResource ResourceKey=ControlMargin}"/>
+                    </StackPanel>
+                </GroupBox>
+                
+                <TextBox Visibility="Collapsed" VerticalAlignment="Top" DockPanel.Dock="Top" x:Name="CustomMessage" Margin="{StaticResource ResourceKey=ControlMargin}"></TextBox>
+            </StackPanel>
             
             <StackPanel Grid.Row="1"
                         Margin              = "{StaticResource ResourceKey=ButtonPanelMargin}"
@@ -40,23 +51,21 @@
                         Orientation         = "Horizontal">
 
                 <vs:DialogButton x:Uid    = "OkButton" 
-                                 Click    = "OnOkClick"
-                                 Content  = "OK" 
-                                 Margin   = "0, 0, 0, 0" 
-                                 Padding  = "{StaticResource ResourceKey=OkCancelButtonPadding}"
-                                 IsEnabled= "{Binding NotHasErrors, Mode=OneWay}"
-                                 IsDefault= "True"
-                                 MinWidth = "73"
-                                 MinHeight= "21"/>
+                                    Click    = "OnOkClick"
+                                    Content  = "OK" 
+                                    Margin   = "0" 
+                                    IsEnabled= "{Binding NotHasErrors, Mode=OneWay}"
+                                    IsDefault= "True"
+                                    MinWidth = "{StaticResource ResourceKey=ButtonMinWidth}"
+                                    MinHeight= "{StaticResource ResourceKey=ButtonMinHeight}"/>
 
                 <vs:DialogButton x:Uid    = "CancelButton" 
-                                 Click    = "OnCancelClick"
-                                 Content  = "Cancel" 
-                                 Margin   = "7, 0, 0, 0" 
-                                 Padding  = "{StaticResource ResourceKey=OkCancelButtonPadding}"
-                                 IsCancel = "True"
-                                 MinWidth = "73"
-                                 MinHeight= "21"/>
+                                    Click    = "OnCancelClick"
+                                    Content  = "Cancel" 
+                                    Margin   = "6, 0, 0, 0"        
+                                    IsCancel = "True"
+                                    MinWidth = "{StaticResource ResourceKey=ButtonMinWidth}"
+                                    MinHeight= "{StaticResource ResourceKey=ButtonMinHeight}"/>
             </StackPanel>
         </Grid>
     </Window.Content>
