@@ -6,12 +6,12 @@
 [using Pharmatechnik.Apotheke.XTplus.Common.IWFL]
 [using Pharmatechnik.Apotheke.XTplus.Common.WFL]
 
-task $safeitemname$  [base StandardWFS<$safeitemname$TS> : IWFServiceBase]
+task $safeitemname$  [base $WfsBaseType$ : IWFServiceBase]
     [params /*TODO Add constructor injections*/]
-    [result $safeitemname$Result]
+    [result $ResultType$]
 {
 
-    init [params $safeitemname$InitParams initParams];
+    init [params $InitParams$];
     exit    End;
 
     Init --> End;

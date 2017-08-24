@@ -53,6 +53,10 @@
   <ItemGroup>
     <Compile Include="ThisAssembly.cs" />
     <Compile Include="ThisAssembly.generated.cs" />
+    <Compile Include="Wizards\Task\OptionsDialog.xaml.cs">
+      <DependentUpon>OptionsDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wizards\Task\Wizard.cs" />
     <Compile Include="Wizards\TestProject\MyProjectWizard.xaml.cs">
       <DependentUpon>MyProjectWizard.xaml</DependentUpon>
     </Compile>
@@ -163,13 +167,17 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Wizards\Task\OptionsDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Wizards\TestProject\MyProjectWizard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Templates\ItemTemplates\Task\Class.cs.txt" />
+    <None Include="Templates\ItemTemplates\Task\TaskState.cs.txt" />
     <None Include="Templates\ItemTemplates\Task\Empty.txt" />
     <VSTemplate Include="Templates\ItemTemplates\Task\EmptyTask.vstemplate">
       <OutputSubPath>XTplus</OutputSubPath>
@@ -217,6 +225,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Templates\ItemTemplates\GdUserControl\UserControl.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\Task\InitParams.cs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ItemTemplates\Task\Result.cs.txt" />
   </ItemGroup>
   <Import Project="TemplateItems.targets" />
   <Import Project="UpdateProductVersion.targets" />
