@@ -5,15 +5,17 @@
                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                  xmlns:sys="clr-namespace:System;assembly=mscorlib"
-                 HasHelpButton="False"
-                 ResizeMode="NoResize"
-                 ShowInTaskbar="False"
-                 HasDialogFrame="True"
-                 WindowStartupLocation="CenterOwner"
-                 mc:Ignorable="d" 
-                 SizeToContent="Height"
-                 Title="Specifiy Options"
-                 Width="400" 
+                 xmlns:imaging="clr-namespace:Microsoft.VisualStudio.Imaging;assembly=Microsoft.VisualStudio.Imaging"
+                 xmlns:ic="clr-namespace:Microsoft.VisualStudio.Imaging;assembly=Microsoft.VisualStudio.ImageCatalog"
+                 HasHelpButton         = "False"
+                 ResizeMode            = "NoResize"
+                 ShowInTaskbar         = "False"
+                 HasDialogFrame        = "True"
+                 WindowStartupLocation = "CenterOwner"
+                 mc:Ignorable          = "d" 
+                 SizeToContent         = "Height"
+                 Title                 = "Specifiy Options"
+                 Width                 = "400" 
                  >
 
     <Window.Resources>
@@ -32,17 +34,35 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <StackPanel Grid.Row="0">
+            <Grid Grid.Row="0">
 
-                <GroupBox Header="Additional C# classes" Padding="4">
-                    <StackPanel>
-                        <CheckBox Content="Generate C# class for _Init Params"     x:Name="GenerateInitParams" Margin="{StaticResource ResourceKey=ControlMargin}"/>
-                        <CheckBox Content="Generate C# class for Task State (_TS)" x:Name="GenerateTaskState"  Margin="{StaticResource ResourceKey=ControlMargin}"/>
-                        <CheckBox Content="Generate C# class for _Result"          x:Name="GenerateResult"     Margin="{StaticResource ResourceKey=ControlMargin}"/>
-                    </StackPanel>
-                </GroupBox>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="44"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
                 
-            </StackPanel>
+                <imaging:CrispImage 
+                                    Moniker             = "{x:Static ic:KnownMonikers.ActivityDiagram}"                                    
+                                    Width               = "32"
+                                    Height              = "32"                                                            
+                                    Margin              = "0, 0, 12, 0"     
+                                    VerticalAlignment   = "Top"
+                                    HorizontalAlignment = "Right"/>
+
+                <StackPanel Grid.Column="1">
+                    
+                    <GroupBox Header="Additional C# classes" Padding="4">
+                        <StackPanel>
+                            <CheckBox Content="Generate C# class for _Init Params"     x:Name="GenerateInitParams" Margin="{StaticResource ResourceKey=ControlMargin}"/>
+                            <CheckBox Content="Generate C# class for Task State (_TS)" x:Name="GenerateTaskState"  Margin="{StaticResource ResourceKey=ControlMargin}"/>
+                            <CheckBox Content="Generate C# class for _Result"          x:Name="GenerateResult"     Margin="{StaticResource ResourceKey=ControlMargin}"/>
+                        </StackPanel>
+                    </GroupBox>
+
+                </StackPanel>
+                
+            </Grid>
+            
             
             <StackPanel Grid.Row="1"
                         Margin              = "{StaticResource ResourceKey=ButtonPanelMargin}"

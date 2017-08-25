@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
     <DefaultName>Template.pos</DefaultName>
-    <Name>Pos Template</Name>
+    <Name>IXOS Pos Template</Name>
     <Description>A blank print template (.pos)</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>11</SortOrder>
