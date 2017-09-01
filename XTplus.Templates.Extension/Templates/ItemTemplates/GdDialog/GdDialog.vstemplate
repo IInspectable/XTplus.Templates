@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>Dialog.gd</DefaultName>
     <Name>IXOS Dialog</Name>
-    <Description>A blank IXOS Dialog (gd)</Description>
+    <Description>A blank IXOS Dialog (.gd)</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>13</SortOrder>
     <Icon>GuiDefinition.ico</Icon>

@@ -2,7 +2,7 @@
   <TemplateData>
     <DefaultName>UserControl.gd</DefaultName>
     <Name>IXOS User Control</Name>
-    <Description>A reusable IXOS User Control (gd)</Description>
+    <Description>A reusable IXOS User Control (.gd)</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>14</SortOrder>
     <Icon>UserControl.ico</Icon>
