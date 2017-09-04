@@ -236,6 +236,16 @@
   <ItemGroup>
     <None Include="Templates\ItemTemplates\Task\Result.cs.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewItem_32x.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Preview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+  </ItemGroup>
   <Import Project="TemplateItems.targets" />
   <Import Project="UpdateProductVersion.targets" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
