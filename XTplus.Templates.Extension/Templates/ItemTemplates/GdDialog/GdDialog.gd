@@ -14,10 +14,10 @@
                     ColumnCount = 1
                     RowCount    = 1
 
-                    RowInfos[1].Mode  = Variable // Fixed
+                    RowInfos[1].Mode  = Variable
                     RowInfos[1].Value = 100
                     
-                    ColumnInfos[1].Mode  = Variable // Fixed
+                    ColumnInfos[1].Mode  = Variable
                     ColumnInfos[1].Value = 100
 
                 END LAYOUT
