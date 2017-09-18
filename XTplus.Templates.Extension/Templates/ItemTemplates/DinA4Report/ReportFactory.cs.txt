@@ -1,0 +1,43 @@
+﻿using System.Collections.Generic;
+
+using Pharmatechnik.Apotheke.XTplus.Framework.Core.Report.ALL;
+using Pharmatechnik.Apotheke.XTplus.Framework.Core.Report.IBOL;
+using Pharmatechnik.Apotheke.XTplus.Framework.Core.Report.RPL;
+
+namespace $rootnamespace$ {
+
+    public class $safeitemname$: ReportBaseFactoryWithTypedConfig<$fileinputname$RD, $fileinputname$ReportConfiguration> {
+
+        public $safeitemname$(IReportManager reportManager) 
+            : base(reportManager) {
+        }
+
+        public override IEnumerable<ReportDefinition> BuiltInReports {
+            get {
+                yield return CreateBuiltInReportDefinition(
+                    reportName : "$rootnamespace$.$fileinputname$",
+                    displayName: "$fileinputname$",
+                    description: "TODO Beschreibung für $fileinputname$.");
+            }
+        }
+
+        public override PrinterCategory PrinterCategory => PrinterCategory.DINA4;
+
+        public override string DataSource      => "$fileinputname$";
+        public override string EditorGroupName => "Kasse";
+        public override bool EditableByEndUser => true;
+        public override bool VisibleForEndUser => true;
+        
+        protected override $fileinputname$RD GetPrototypRD(int reportVersion) {
+            return $fileinputname$RD.CreatePrototype();
+        }
+
+        protected override $fileinputname$RD ApplyConfigOnPrototyp($fileinputname$RD rd, $fileinputname$ReportConfiguration config) {
+            return rd;
+        }
+
+        protected override $fileinputname$RD ApplyConfig($fileinputname$RD rd, $fileinputname$ReportConfiguration config) {
+            return rd;
+        }
+    }
+}

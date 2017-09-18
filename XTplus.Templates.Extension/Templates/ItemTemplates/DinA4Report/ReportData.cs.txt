@@ -1,0 +1,17 @@
+﻿using System;
+using Pharmatechnik.Apotheke.XTplus.Framework.Core.Report.IWFL;
+
+namespace $rootnamespace$ {
+
+    [Serializable]
+    public class $safeitemname$ : IReportData {
+
+        public static $safeitemname$ CreatePrototype() {
+            return new $safeitemname$();
+        }
+
+        public IReportData GetPrototype() {
+            return CreatePrototype();
+        }
+    }
+}

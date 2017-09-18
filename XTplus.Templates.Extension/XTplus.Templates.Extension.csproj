@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Templates\ItemTemplates\DinA4Report\DinA4.mrt" />
     <None Include="UpdateProductVersion.targets" />
     <None Include="Templates\ProjectTemplates\TestProject\AssemblyInfo.cs" />
     <None Include="Templates\ProjectTemplates\TestProject\Class1.cs" />
@@ -245,6 +246,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include="Templates\ItemTemplates\DinA4Report\Report.ico" />
+    <None Include="Templates\ItemTemplates\DinA4Report\ReportConfiguration.cs.txt" />
+    <None Include="Templates\ItemTemplates\DinA4Report\ReportData.cs.txt" />
+    <None Include="Templates\ItemTemplates\DinA4Report\ReportFactory.cs.txt" />
+    <VSTemplate Include="Templates\ItemTemplates\DinA4Report\DinA4Report.vstemplate">
+      <OutputSubPath>XTplus</OutputSubPath>
+    </VSTemplate>
   </ItemGroup>
   <Import Project="TemplateItems.targets" />
   <Import Project="UpdateProductVersion.targets" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="XTplus.Templates.Extension.56bff62d-0831-4380-9f93-8a45626950dc" Version="1.0.15" Language="en-US" Publisher="Dipl.-Ing. Maximilian Hänel" />
+    <Identity Id="XTplus.Templates.Extension.56bff62d-0831-4380-9f93-8a45626950dc" Version="1.0.16" Language="en-US" Publisher="Dipl.-Ing. Maximilian Hänel" />
     <DisplayName>XTplus.Templates</DisplayName>
     <Description xml:space="preserve">XTplus project and item templates for Visual Studio.</Description>
     <MoreInfo>https://github.com/IInspectable/XTplus.Templates</MoreInfo>
@@ -17,6 +17,7 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
     <!--<Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="TestProject" />-->
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="DinA4Report" />
     <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="EmptyTask" />
     <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="EmptyPos" />
     <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="GdForm" />
