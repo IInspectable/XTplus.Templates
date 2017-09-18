@@ -9,9 +9,9 @@
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem ItemType="Code" TargetFileName="$fileinputname$ReportFactory.cs" ReplaceParameters="true" OpenInEditor="true">ReportFactory.cs.txt</ProjectItem>
-    <ProjectItem ItemType="Code" TargetFileName="$fileinputname$ReportConfiguration.cs" ReplaceParameters="true" OpenInEditor="true">ReportConfiguration.cs.txt</ProjectItem>
-    <ProjectItem ItemType="Code" TargetFileName="$fileinputname$RD.cs" ReplaceParameters="true" OpenInEditor="true">ReportData.cs.txt</ProjectItem>
+    <ProjectItem ItemType="Compile" TargetFileName="$fileinputname$ReportFactory.cs" ReplaceParameters="true" OpenInEditor="true">ReportFactory.cs.txt</ProjectItem>
+    <ProjectItem ItemType="Compile" TargetFileName="$fileinputname$ReportConfiguration.cs" ReplaceParameters="true" OpenInEditor="true">ReportConfiguration.cs.txt</ProjectItem>
+    <ProjectItem ItemType="Compile" TargetFileName="$fileinputname$RD.cs" ReplaceParameters="true" OpenInEditor="true">ReportData.cs.txt</ProjectItem>
     <ProjectItem ItemType="EmbeddedResource" TargetFileName="$fileinputname$.mrt" ReplaceParameters="false" OpenInEditor="false">DinA4.mrt</ProjectItem>
   </TemplateContent>
 </VSTemplate>
