@@ -1,0 +1,19 @@
+﻿; Nav File
+[$RootKey$\ShellFileAssociations\.nav]
+"DefaultIconMoniker"="KnownMonikers.ActivityDiagram"
+
+; Dependency Rules
+[$RootKey$\ShellFileAssociations\.dep]
+"DefaultIconMoniker"="KnownMonikers.DependencyMatrix"
+
+; GUI Definition
+[$RootKey$\ShellFileAssociations\.gd]
+"DefaultIconMoniker"="KnownMonikers.ChildWindowTemplate"
+
+; POS Template
+[$RootKey$\ShellFileAssociations\.pos]
+"DefaultIconMoniker"="KnownMonikers.PageContent"
+
+; Reports Query
+[$RootKey$\ShellFileAssociations\.abfrage]
+"DefaultIconMoniker"="KnownMonikers.DataSourceView"

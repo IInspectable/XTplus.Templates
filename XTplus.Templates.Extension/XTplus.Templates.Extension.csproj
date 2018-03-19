@@ -238,6 +238,7 @@
     <None Include="Templates\ItemTemplates\Task\Result.cs.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Icons.pkgdef" />
     <Content Include="Resources\NewItem_32x.png">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
