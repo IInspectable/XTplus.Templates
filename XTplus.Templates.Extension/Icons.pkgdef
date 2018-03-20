@@ -17,3 +17,7 @@
 ; Reports Query
 [$RootKey$\ShellFileAssociations\.abfrage]
 "DefaultIconMoniker"="KnownMonikers.DataSourceView"
+
+; MRT Report
+[$RootKey$\ShellFileAssociations\.mrt]
+"DefaultIconMoniker"="KnownMonikers.Report"
