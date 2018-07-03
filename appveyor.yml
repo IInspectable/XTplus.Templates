@@ -1,0 +1,13 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Debug
+platform: Any CPU
+environment:
+  DeployExtension: false
+before_build:
+  - nuget restore
+build:
+  verbosity: minimal
+artifacts:
+- path: bin\Debug\XTplus.Templates.Extension.vsix
+  name: XTplus.Templates.Extension.vsix
