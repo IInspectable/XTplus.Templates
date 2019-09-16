@@ -19,7 +19,7 @@
     </Project>
   </TemplateContent>
   <WizardExtension>  
-    <Assembly>XTplus.Templates.Extension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3d1cef8c30c09fdf</Assembly>  
+    <Assembly>XTplus.Templates.Extension.2019, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3d1cef8c30c09fdf</Assembly>  
     <FullClassName>XTplus.Templates.Extension.Wizards.TestProject.Wizard</FullClassName>  
   </WizardExtension>  
 </VSTemplate>
