@@ -9,5 +9,5 @@ before_build:
 build:
   verbosity: minimal
 artifacts:
-- path: XTplus.Templates.Extension\bin\Debug\XTplus.Templates.Extension.vsix
+- path: XTplus.Templates.Extension\bin\Debug\XTplus.Templates.Extension.2019.vsix
   name: XTplus.Templates.Extension.vsix
