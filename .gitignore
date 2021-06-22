@@ -2,10 +2,18 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/XTplus.Templates.Extension/bin/Debug
-/XTplus.Templates.Extension/obj/Debug
+/XTplus.Templates.Extension/bin
+/XTplus.Templates.Extension/obj
+
 /XTplus.Templates.Extension/Templates/ProjectTemplates/*.zip
 /XTplus.Templates.Extension/Templates/ItemTemplates/*.zip
-/XTplus.Templates.Extension/ThisAssembly.generated.cs
+
+
+
 /.vs
+/**/*.generated.cs
+/**/*.nuget.cache
+/**/*.nuget.g.props
+/**/*.nuget.g.targets
+/**/project.assets.json
 

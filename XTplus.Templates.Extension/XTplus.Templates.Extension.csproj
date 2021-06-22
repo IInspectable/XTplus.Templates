@@ -24,7 +24,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XTplus.Templates.Extension</RootNamespace>
-    <AssemblyName>XTplus.Templates.Extension</AssemblyName>
+    <AssemblyName>XTplus.Templates.Extension.2019</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
@@ -178,16 +178,18 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.ImageCatalog">
-      <Version>15.0.26201</Version>
+      <Version>16.2.29116.78</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Shell.14.0">
       <Version>14.3.25407</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Threading">
-      <Version>15.6.31</Version>
+      <Version>16.3.52</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VSSDK.BuildTools">
-      <Version>15.0.26201</Version>
+      <Version>16.4.12</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="MSBuildTasks">
       <Version>1.5.0.235</Version>
