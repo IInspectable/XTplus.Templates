@@ -2,8 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/XTplus.Templates.Extension/bin
-/XTplus.Templates.Extension/obj
+/XTplus.Templates.Extension2019/bin
+/XTplus.Templates.Extension2019/obj
+
+/XTplus.Templates.Extension2022/bin
+/XTplus.Templates.Extension2022/obj
 
 /XTplus.Templates.Extension/Templates/ProjectTemplates/*.zip
 /XTplus.Templates.Extension/Templates/ItemTemplates/*.zip

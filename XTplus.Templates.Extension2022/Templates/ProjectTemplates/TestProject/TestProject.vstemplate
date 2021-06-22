@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>MyProjectTemplate 4</Name>
+    <Description>MyProjectTemplate 4</Description>
+    <Icon>MyProjectTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>6d525a70-1564-4f1e-a6c8-7c8c7695c626</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MyProjectTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>  
+    <Assembly>XTplus.Templates.Extension.2022, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3d1cef8c30c09fdf</Assembly>  
+    <FullClassName>XTplus.Templates.Extension.Wizards.TestProject.Wizard</FullClassName>  
+  </WizardExtension>  
+</VSTemplate>

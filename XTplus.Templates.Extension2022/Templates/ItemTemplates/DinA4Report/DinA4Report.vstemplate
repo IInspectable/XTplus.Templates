@@ -1,0 +1,17 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Report.cs</DefaultName>
+    <Name>IXOS Report DIN A4</Name>
+    <Description>An empty IXOS report with report factory and report data DIN A4</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>15</SortOrder>
+    <Icon>Report.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem ItemType="Compile" TargetFileName="$fileinputname$ReportFactory.cs" ReplaceParameters="true" OpenInEditor="true">ReportFactory.cs.txt</ProjectItem>
+    <ProjectItem ItemType="Compile" TargetFileName="$fileinputname$ReportConfiguration.cs" ReplaceParameters="true" OpenInEditor="true">ReportConfiguration.cs.txt</ProjectItem>
+    <ProjectItem ItemType="Compile" TargetFileName="$fileinputname$RD.cs" ReplaceParameters="true" OpenInEditor="true">ReportData.cs.txt</ProjectItem>
+    <ProjectItem ItemType="EmbeddedResource" TargetFileName="$fileinputname$.mrt" ReplaceParameters="false" OpenInEditor="false">DinA4.mrt</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

@@ -187,12 +187,9 @@
       <Version>16.3.52</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VSSDK.BuildTools">
-      <Version>16.4.12</Version>
+      <Version>16.9.1050</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="MSBuildTasks">
-      <Version>1.5.0.235</Version>
     </PackageReference>
     <PackageReference Include="VSSDK.TemplateWizardInterface">
       <Version>12.0.4</Version>

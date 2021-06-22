@@ -1,0 +1,8 @@
+﻿using Pharmatechnik.Apotheke.XTplus.Framework.Core.Report.IBOL;
+
+namespace $rootnamespace$ {
+
+    public class $safeitemname$: ReportConfiguration {
+
+    }
+}

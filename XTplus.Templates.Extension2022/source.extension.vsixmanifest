@@ -1,19 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="XTplus.Templates.Extension.56bff62d-0831-4380-9f93-8a45626950dc" Version="2.0.2" Language="en-US" Publisher="Dipl.-Ing. Maximilian Hänel" />
-    <DisplayName>XTplus.Templates</DisplayName>
+    <Identity Id="XTplus.Templates.Extension.56bff62d-0831-4380-9f93-8a45626950e" Version="2.0.2" Language="en-US" Publisher="Dipl.-Ing. Maximilian Hänel" />
+    <DisplayName>XTplus.Templates 2022</DisplayName>
     <Description xml:space="preserve">XTplus project and item templates for Visual Studio.</Description>
     <MoreInfo>https://github.com/IInspectable/XTplus.Templates</MoreInfo>
     <Icon>Resources\NewItem_32x.png</Icon>
     <PreviewImage>Resources\Preview.png</PreviewImage>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0,17.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
   </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-  </Dependencies>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
     <!--<Asset Type="Microsoft.VisualStudio.ProjectTemplate" Path="TestProject" />-->
@@ -26,6 +25,6 @@
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="Icons.pkgdef" />
   </Assets>
   <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0, 17.0)" DisplayName="Visual Studio core editor" />
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0, 18.0)" DisplayName="Visual Studio core editor" />
   </Prerequisites>
 </PackageManifest>
