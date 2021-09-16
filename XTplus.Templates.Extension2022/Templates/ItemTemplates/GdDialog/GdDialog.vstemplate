@@ -10,8 +10,8 @@
   <TemplateContent>
     <References />
     <ProjectItem SubType="" TargetFileName="$fileinputname$.gd" ReplaceParameters="true">GdDialog.gd</ProjectItem>
-    <ProjectItem SubType="Form" TargetFileName="GUI\generated\Frm$fileinputname$.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
-    <ProjectItem TargetFileName="GUI\generated\Frm$fileinputname$.Designer.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\$fileinputname$TO.generated.cs" ReplaceParameters="false">Empty.txt</ProjectItem>
+    <ProjectItem SubType="Form" TargetFileName="GUI\generated\Frm$fileinputname$.cs" ReplaceParameters="false">Empty1.txt</ProjectItem>
+    <ProjectItem TargetFileName="GUI\generated\Frm$fileinputname$.Designer.cs" ReplaceParameters="false">Empty2.txt</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\$fileinputname$TO.generated.cs" ReplaceParameters="false">Empty3.txt</ProjectItem>
   </TemplateContent>
 </VSTemplate>
