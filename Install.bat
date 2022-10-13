@@ -1,2 +1,2 @@
 @Echo Off
-powershell.exe -noprofile -Command "& {. '%~dp0XTplus.Templates.Extension\bin\Debug\XTplus.Templates.Extension.vsix'}"
+powershell.exe -noprofile -Command "& {. '%~dp0XTplus.Templates.Extension2022\bin\Debug\XTplus.Templates.Extension.2022.vsix'}"

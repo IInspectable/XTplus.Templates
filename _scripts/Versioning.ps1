@@ -1,6 +1,5 @@
 ﻿
 $targetFiles=@(
-    "$PSScriptRoot'\..\XTplus.Templates.Extension2019\UpdateProductVersion.targets",
 	"$PSScriptRoot'\..\XTplus.Templates.Extension2022\UpdateProductVersion.targets"
 	)
 
