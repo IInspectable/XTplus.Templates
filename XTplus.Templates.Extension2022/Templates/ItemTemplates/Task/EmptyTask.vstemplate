@@ -9,7 +9,7 @@
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem SubType="" TargetFileName="$fileinputname$.nav" ReplaceParameters="true">Task.nav</ProjectItem>
+    <ProjectItem SubType="Code" ItemType="GenerateNavCode" TargetFileName="$fileinputname$.nav" ReplaceParameters="true">Task.nav</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$TS.cs" ReplaceParameters="true">TaskState.cs.txt</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$Result.cs" ReplaceParameters="true">Result.cs.txt</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$InitParams.cs" ReplaceParameters="true">InitParams.cs.txt</ProjectItem>
