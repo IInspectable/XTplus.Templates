@@ -13,11 +13,6 @@
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$TS.cs" ReplaceParameters="true">TaskState.cs.txt</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$Result.cs" ReplaceParameters="true">Result.cs.txt</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$InitParams.cs" ReplaceParameters="true">InitParams.cs.txt</ProjectItem>
-    
-    <ProjectItem SubType="Code" TargetFileName="WFL\$fileinputname$WFS.cs" ReplaceParameters="false">Empty1.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="WFL\generated\IBegin$fileinputname$WFS.generated.cs" ReplaceParameters="false">Empty2.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="WFL\generated\$fileinputname$WFSBase.generated.cs" ReplaceParameters="false">Empty3.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\I$fileinputname$WFS.generated.cs" ReplaceParameters="false">Empty4.txt</ProjectItem>
   </TemplateContent>
   <WizardExtension>
     <Assembly>XTplus.Templates.Extension.2022, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3d1cef8c30c09fdf</Assembly>

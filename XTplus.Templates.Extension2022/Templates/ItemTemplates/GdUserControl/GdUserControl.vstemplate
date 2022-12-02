@@ -10,8 +10,5 @@
   <TemplateContent>
     <References />
     <ProjectItem SubType="" TargetFileName="$fileinputname$.gd" ReplaceParameters="true">GdUserControl.gd</ProjectItem>
-    <ProjectItem SubType="Form" TargetFileName="GUI\generated\Usr$fileinputname$.cs" ReplaceParameters="false">Empty1.txt</ProjectItem>
-    <ProjectItem TargetFileName="GUI\generated\Usr$fileinputname$.Designer.cs" ReplaceParameters="false">Empty2.txt</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="IWFL\generated\$fileinputname$TO.generated.cs" ReplaceParameters="false">Empty3.txt</ProjectItem>
   </TemplateContent>
 </VSTemplate>
