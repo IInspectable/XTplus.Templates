@@ -1,2 +1,2 @@
 
-powershell.exe -noprofile -Command "& {& '%~dp0_scripts\Increase-Build.ps1'}"
+pwsh -noprofile -Command "& {& '%~dp0_scripts\Increase-Build.ps1'}"
